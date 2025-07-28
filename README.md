@@ -7,26 +7,17 @@ Repository Structure:
 ----------------------------------
 1. Database:
    - Contains the Excel files with the datasets used in the analysis:
-     • Buritaca_Desgrasantes.xlsx
-     • Buritaca_Desgrasantes_attr.xlsx
-     • Buritaca_Tipos.xlsx
-     • Buritaca_Tipos_attr.xlsx
-     • Neguanje_Desgrasantes.xlsx
-     • Neguanje_Desgrasantes_attr.xlsx
-     • Neguanje_Tipos.xlsx
-     • Neguanje_Tipos_attr.xlsx
-     • Tairona_Desgrasantes.xlsx
-     • Tairona_Desgrasantes_attr.xlsx
-     • Tairona_Tipos.xlsx
-     • Tairona_Tipos_attr.xlsx
+     • TAIRONA_STRUCTURES_UNTIL_2025.xlsx
+     • MULTIPLE_REGRESSION_MODEL_UNTIL_2025.xlsx
 
 2. GIS:
-   - Contains the spatial data files (shapefile components) defining the study area:
-     • POLYGON_SURVEY_UNTILL_2023.shp
-     • POLYGON_SURVEY_UNTILL_2023.dbf
-     • POLYGON_SURVEY_UNTILL_2023.shx
-     • POLYGON_SURVEY_UNTILL_2023.prj
-     • POLYGON_SURVEY_UNTILL_2023.cpg
+   - Contains the spatial data files (shapefile  and raster components) defining the study area:
+     • COMMUNITIES_TAIRONA_UNTIL_2025.shp
+     • FUNCTIONAL_CERAMICS_TAIRONA_PERIOD_SITES_UNTIL_2025.shp
+     • RIO_FRIO_POLYGON_SURVEY_UNTIL_2025.shp
+     • STRUCTURES_DBSCAN_UNTIL_2025.shp
+     • TAIRONA_SITES_UNTIL_2025.shp
+     • DEM_POLYGON_SURVEY_UNTIL_2025.tiff    
 
 3. R Code Files:
    - The main R script (or R Markdown file) contains the code to:
@@ -39,37 +30,38 @@ Software and Key Package Versions:
 ----------------------------------
 - R version: [R 4.4.1]
 - Key R packages used in this project include (with version numbers):
-  • sf: e.g., version 1.0-0 (built under R 4.4.2; linking to GEOS 3.12.2, GDAL 3.9.3, PROJ 9.4.1) - installed 1.0.19 
-  • spdep: (built under R 4.4.2) - installed 1.3.7 
-  • ggplot2: e.g., version 3.3.6 - installed 3.5.1 
-  • viridis: installed 0.6.5 
-  • car: installed 3.1.3 
-  • spatstat.explore: e.g., version 3.3-2 - installed 3.3.2 
-  • spatstat.geom: e.g., version 3.3-3 - installed 3.3.3 
-  • spatstat.model: e.g., version 3.3-2 - installed 3.3.2 
-  • network: installed version 1.18.2 (update available: 1.19.0) - installed 1.18.2 
-  • ggspatial: (built under R 4.4.2) - installed 1.1.9 
-  • vegan: e.g., version 2.6-8 - installed 2.6.8 
+  • car: 3.1.3
+  • cluster: 2.1.6
+  • dbscan: 1.2.2
+  • dendextend: 1.19.0
+  • dplyr: 1.1.4
+  • gplots: 3.2.0
+  • ggplot2: 3.5.1
+  • ggspatial: 1.1.9
+  • lmtest: 0.9.40 
+  • movecost: 2.1
+  • patchwork: 1.3.0
   • scales: installed 1.3.0 
   • dplyr: installed 1.1.4 
   • patchwork: installed 1.3.0 
   • tidygraph: installed 1.3.1 
   • ggraph: installed 2.2.1 
   • GGally: installed 2.2.1 
-  • FSA: e.g., version 0.9.5 - installed 0.9.5 
-  • stats: - installed 4.4.1 
-  • ggpubr: installed 0.6.0 
-  • writexl: installed 1.5.1 
-  • openxlsx: installed 4.2.7.1 
-  • sna: e.g., version 2.8 (created on 2024-09-07) - installed 2.8 
-  • statnet: e.g., version 2019.6 (2019-06-13) - installed 2019.6 
-  • igraph: installed 2.0.3 
-  • DT: installed 0.33 
-  • tnet: installed 3.0.16 
-  • kableExtra: installed 1.4.0 
-  • readxl: installed 1.4.3 
-  • dunn.test: installed 1.3.6 
-  • ggdist: installed 3.3.2 
+  • psych: 2.5.6
+  • proxy: 0.4.27
+  • readxl: 1.4.3
+  • raster: 3.6.32
+  • sf: 1.0.19
+  • smacpod: 2.6.4
+  • sp: 2.1.4
+  • spdep: 1.3.8
+  • spatstat: 3.3.2
+  • spatstat.explore: 3.4.2
+  • spatstat.geom: 3.3.6 
+  • stats: 4.4.1
+  • scales: 1.3.0 
+  • tmap: 4.0
+  • writexl: 1.5.1  
 
 Getting Started:
 ----------------------------------
